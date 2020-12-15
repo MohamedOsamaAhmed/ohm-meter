@@ -4651,7 +4651,7 @@ _delay_ms(double __ms)
 00002000 <main>:
 #include "ADC.h"
 #include <util/delay.h>
-#define R 10000
+#define R1 10000
 #define VCC 5
 int main()
 {
@@ -4732,7 +4732,7 @@ int main()
     2086:	a9 8b       	std	Y+17, r26	; 0x11
     2088:	ba 8b       	std	Y+18, r27	; 0x12
 			// this is a form of the formula of voltage divider
-			Runknown= ((R*(Runknown_volt/5))/(1-(Runknown_volt/5)));
+			Runknown= ((R1*(Runknown_volt/5))/(1-(Runknown_volt/5)));
     208a:	6f 85       	ldd	r22, Y+15	; 0x0f
     208c:	78 89       	ldd	r23, Y+16	; 0x10
     208e:	89 89       	ldd	r24, Y+17	; 0x11

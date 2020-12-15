@@ -12,7 +12,7 @@
 #include "Types.h"
 #include "ADC.h"
 #include <util/delay.h>
-#define R 10000
+#define R1 10000
 #define VCC 5
 int main()
 {
@@ -31,7 +31,7 @@ int main()
 			// this number .00488281 is 5/1024
 			Runknown_volt = adc_value * .00488281;
 			// this is a form of the formula of voltage divider
-			Runknown= ((R*(Runknown_volt/5))/(1-(Runknown_volt/5)));
+			Runknown= ((R1*(Runknown_volt/5))/(1-(Runknown_volt/5)));
 			LCD_Vid_Write_Number(Runknown);
 			_delay_ms(500);
 			LCD_Clear();
