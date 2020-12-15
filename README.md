@@ -39,7 +39,7 @@ R fixed is 10 k,let unknown=1 ohm
 output Voltage =.4 mV
 which is not detected by the ADC.
 
-#Modification
+# Modification
 
 A Better way to measure the Resistance would be to a varying voltage divider according to the unknown
 resistances range so as to get better result Or one could measure resistance by simply Using a high 
